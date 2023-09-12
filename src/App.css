@@ -1,38 +1,56 @@
-.App {
+:root {
+  --mainColorRouge:  rgb(173, 16, 5);
+  --mainColorOrange:  rgb(248, 113, 5);
+  --marginMiddle: -1.7vw;
+  --mainPolice: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --secondaryPolice: "Century Gothic";
+}
+
+/* --------------- Classes Générales ------------------------ */
+
+.doubleEspace {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  font-weight: 100;
+}
+
+.fondMagma {
+  background-image: url(./medias/fondMagma.png);
+  background-attachment: fixed;
+  height: 77vh;
+  font-family: var(--mainPolice);
+  font-size: 50px;
+  color: white;
+  padding-top: 23vh;
+}
+
+.titleGeneralTexte {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+img {
+  height: 350px;
+  width: 250px;
+  border-radius: 200px 200px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+img:hover {
+  background-color: sandybrown;
+}
+
+main {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2{
+  font-weight:100;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1:hover, h2:hover {
+  color:sandybrown;
 }
